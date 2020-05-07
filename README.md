@@ -1,2 +1,3 @@
-# test_mu-3
-Art 285 product site
+# test-mu
+This is a repo of my student site for "MU".
+[Demo](https://miyukings.github.io/test_mu-3/)

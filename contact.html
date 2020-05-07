@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Multi Pages | Contact</title>
+    <meta name="description" content="This is a Starter HTML, CSS, and JS Boilerplate/Framework." />
+
+    <!-- FOR SMALL SCREENS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FOR IE/EDGE -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- MAIN CSS FILE-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <header class="site-header toggle-nav">
+        <div class="container">
+            <div class="site-id">
+                <h1><a href="index.html">Base Site | Sub Pages</a></h1>
+            </div>
+            <nav class="site-nav">
+                <div class="menu-button navicon">Menu </div>
+
+                <ul>
+                    <li class="hideonlarge"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <section class="hero">
+            <h2>Contact Us</h2>
+            <p>This is a sub page paragraph in the Hero sections of the home page, brielly summarizing this&nbsp;page.
+            </p>
+            <a href="#contactinfo" class="button">Contact Info</a>
+            <a href="#map" class="button">Map</a>
+        </section>
+
+        <section id="contactinfo">
+            <div class="container">
+                <h3>Way to Get in Touch</h3>
+
+                <div class="row">
+                    <div class="column one-half">
+                        <address>
+                            4303 Diamond Head Road<br />
+                            Honolulu, HI<br />
+                            96814
+                        </address>
+                        <a href="tel:808-123-4567">(808) 123-4567</a>
+
+                    </div>
+                    <div class="column one-half">
+                        <form action="#">
+                            <label for="yourname">Your Name</label>
+                            <input type="text" id="yourname" name="yourname" />
+
+                            <label for="youremail">Your Email</label>
+                            <input type="text" id="youremail" name="youremailname" />
+
+                            <label for="yourmessage">Your Message</label>
+                            <textarea name="yourmessage" id="yourmessage" cols="30" rows="10">
+                        </textarea>
+                            <input type="submit" value="Submit">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="map">
+            <div class="container">
+                <h3>Map</h3>
+                <a href="https://goo.gl/maps/8kETQwLcGWP2"><img src="img/kcc-map.jpg" alt="Map" /></a>
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+
+    <!-- MAIN JS FILE -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
