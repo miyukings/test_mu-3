@@ -23,50 +23,51 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
 
 
-
-
 </head>
 
 <body>
 
-    <header class="site-header">
-
-        <div class="site-id">
-            <h1><img src="img/mu-iconO.png" width="50px" height="50px"></h1>
-            <h1><a href="index.html"><img src="img/logo_black.png" width="100px" height="50px"></a></h1>
-        </div>
-
-        <nav class="side-menu">
-            <ul class="menu">
-                <li class="menu-first">
-                    <a href="#" class="init-bottom">Collection</a>
-
-                    <ul class="menu-second">
-                        <li><a href="#">Planets</a></li>
-                        <li><a href="#">Sputnik</a></li>
-                        <li><a href="#">Flower</a></li>
-                        <li><a href="#">Geometric</a></li>
-                    </ul>
-
-                <li class="menu-first"><a href="#about">Background</a></li>
-                <li class="menu-first"><a href="#contact">Contact Us</a></li>
-                <li class="menu-first"><a href="#">Account</a></li>
-            </ul>
-        </nav>
-    </header>
-
-
     <main class="site-main">
-        <div class="container">
-            <section id="hero">
+        <header class="site-header">
 
+            <div class="site-id">
+                <h1><img src="img/mu-iconO.png" width="50px" height="50px"></h1>
+                <h1><a href="index.html"><img src="img/logo_black.png" width="100px" height="50px"></a></h1>
+            </div>
+
+            <nav class="side-menu">
+                <ul class="menu">
+                    <li class="menu-first">
+                        <a href="#" class="init-bottom">Collection</a>
+
+                        <ul class="menu-second">
+                            <li><a href="#">Planets</a></li>
+                            <li><a href="#">Sputnik</a></li>
+                            <li><a href="#">Flower</a></li>
+                            <li><a href="#">Geometric</a></li>
+                        </ul>
+
+                    <li class="menu-first"><a href="#about">Background</a></li>
+                    <li class="menu-first"><a href="#contact">Contact Us</a></li>
+                    <li class="menu-first"><a href="#">Account</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+
+
+
+        <section id="hero">
+            <div class="container">
 
                 <div class="bg-slider">
                     <h1 class="big-logo"><img src="img/logo_orange1000x457.png" alt="Mu Logo"></h1>
                 </div>
+            </div>
 
-            </section>
-        </div>
+        </section>
+
 
         <section id="collection">
             <div class="container">
@@ -119,7 +120,8 @@
         <section id="about">
             <div class="container">
                 <h2 class="section-head">Background</h2>
-                <h5>In the Japanese language, “無” means nothingness. We try to maintain our minds every time fresh to
+                <h5>In the Japanese language, “無” means nothingness. We try to maintain our minds every time fresh
+                    to
                     create
                     new things using our creativity and uniqueness.</h5>
 
@@ -153,7 +155,8 @@
                 <div class="row">
                     <div class="column one-half">
                         <h3>Customer care</h3>
-                        <blockquote>“It will change over time as you continue to use your jewelry however, we want you
+                        <blockquote>“It will change over time as you continue to use your jewelry however, we want
+                            you
                             to enjoy it as aging!”</blockquote>
 
                         <h4>Little tips for maintenance</h4>
@@ -161,7 +164,8 @@
                         <p>Pour a small amount of mild soap like dish soap into lukewarm water and use a small, soft
                             toothbrush to clean your jewelry. </p>
 
-                        <p>A silver-polishing cloth is a great tool to make your sterling silver jewelry shine again.
+                        <p>A silver-polishing cloth is a great tool to make your sterling silver jewelry shine
+                            again.
                             However, it will not remove scratches. </p>
 
                         <h4>Exchange and Return Policy</h4>
@@ -390,18 +394,19 @@
         });
     </script>
 
+    <!-- BG IMAGE -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/jquery.bgswitcher.js"></script>
     <script>
         jQuery(function ($) {
             $('.bg-slider').bgSwitcher({
                 images: ['img/hero-1bg_1500x1000.jpg', 'img/hero-2bg_1500x1000.jpg', 'img/hero-3bg_1500x1000.jpg'], // 切替背景画像を指定
-                interval: 3000, // 背景画像を切り替える間隔を指定 3000=3秒
+                interval: 4000, // 背景画像を切り替える間隔を指定 3000=3秒
                 loop: true, // 切り替えを繰り返すか指定 true=繰り返す　false=繰り返さない
                 shuffle: true, // 背景画像の順番をシャッフルするか指定 true=する　false=しない
-                effect: "blind", // エフェクトの種類をfade,blind,clip,slide,drop,hideから指定
+                effect: "fade", // エフェクトの種類をfade,blind,clip,slide,drop,hideから指定
                 duration: 500, // エフェクトの時間を指定します。
-                easing: "swing" // エフェクトのイージングをlinear,swingから指定
+                easing: "linear" // エフェクトのイージングをlinear,swingから指定
             });
         });
     </script>
